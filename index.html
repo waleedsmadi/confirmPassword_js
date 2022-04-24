@@ -9,6 +9,31 @@
 </head>
 <body>
     
+    <div class="wrapper">
+        <header>
+            <h2>Confirm password check in HTML CSS & JavaScript</h2>
+        </header>
+
+        <section class="response hidden" data-response>
+
+            <!-- filling by JS -->
+            <p></p>
+        </section>
+
+        <section class="input-password">
+            <input type="password" placeholder="Enter password" data-password>
+        </section>
+
+        <section class="input-password confirm">
+            <input type="password" placeholder="Confirm password" disabled data-confirm>
+
+            <!-- filling by JS -->
+            <span class="show"></span>
+        </section>
+
+        <button type="button" class="btn" data-btn>Check</button>
+    </div>
+
     <script src="./script.js"></script>
 </body>
 </html>
