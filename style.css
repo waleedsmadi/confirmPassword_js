@@ -1,0 +1,98 @@
+*, *::after, *::before{
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+
+body{background-color: #F3F2F3;}
+
+.wrapper{
+    width: 450px;
+    padding: 20px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    background-color: #fff;
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    box-shadow: 2px 2px 30px 20px grey;
+}
+
+
+header{
+    font-size: 20px;
+    text-align: center;
+    color: #444;
+    margin-bottom: 20px;
+}
+
+.response{
+    width: 100%;
+    padding: 12px;
+    font-size: 20px;
+    text-align: center;
+    background-color: #F8D8DC;
+    color: #666;
+    margin:15px 0;
+    border-radius: 6px;
+}
+
+.response.success{background-color: #D4EEDB;}
+.response.error{background-color: #F8D8DC;}
+
+
+.input-password{
+    width: 100%;
+    margin: 15px 0;
+    
+}
+
+.input-password input{
+    width: 100%;
+    font-size: 20px;
+    padding: 10px;
+    outline: 0;
+    border:2px solid rgb(240, 240, 222);
+    border-radius: 6px;
+}
+
+.input-password input:focus{outline: 2px solid #3D9E5B;}
+
+
+.input-password.confirm{
+    position: relative;
+}
+
+.show{
+    display: block;
+    position: absolute;
+    right: 20px;
+    top: 50%;
+    transform: translateY(-50%);
+    cursor: pointer;
+}
+
+
+.btn{
+    width: 100%;
+    padding: 10px;
+    font-size: 20px;
+    background-color: #3d9e5ba8;
+    border: 0;
+    outline: none;
+    font-weight: bold;
+    border-radius: 6px;
+    color: white;
+    cursor: not-allowed;
+    margin-top: 15px;
+
+}
+.btn.active{
+    background-color: #3D9E5C;
+    cursor: pointer;
+}
+.hidden{display: none;}
